@@ -1,0 +1,8 @@
+export { default as ProfilePageHeader } from '@/components/profile/ProfilePageHeader.vue'
+export { default as ProfileHeader } from '@/components/profile/ProfileHeader.vue'
+export { default as ProfileInfoCard } from '@/components/profile/ProfileInfoCard.vue'
+export { default as BasicInfoSection } from '@/components/profile/BasicInfoSection.vue'
+export { default as SecuritySection } from '@/components/profile/SecuritySection.vue'
+export { default as ProfileStatsSection } from '@/components/profile/ProfileStatsSection.vue'
+export { default as RecentActivitySection } from '@/components/profile/RecentActivitySection.vue'
+export { default as ProfileQuickActions } from '@/components/profile/ProfileQuickActions.vue'

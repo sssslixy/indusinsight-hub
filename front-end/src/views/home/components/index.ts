@@ -1,0 +1,7 @@
+export { default as AppHeader } from '@/components/AppHeader.vue'
+export { default as HeroSection } from '@/components/HeroSection.vue'
+export { default as AgentsSection } from '@/components/AgentsSection.vue'
+export { default as ConfigSection } from '@/components/ConfigSection.vue'
+export { default as CapabilitySection } from '@/components/CapabilitySection.vue'
+export { default as WorkflowSection } from '@/components/WorkflowSection.vue'
+export { default as CTASection } from '@/components/CTASection.vue'

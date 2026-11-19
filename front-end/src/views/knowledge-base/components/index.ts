@@ -1,0 +1,6 @@
+export { default as KnowledgeBaseOverviewCard } from '@/components/knowledge-base/KnowledgeBaseOverviewCard.vue'
+export { default as DocumentTable } from '@/components/knowledge-base/DocumentTable.vue'
+export { default as UploadDocumentDialog } from '@/components/knowledge-base/UploadDocumentDialog.vue'
+export { default as DeleteDocumentDialog } from '@/components/knowledge-base/DeleteDocumentDialog.vue'
+export { default as DocumentToggleEnabledDialog } from '@/components/knowledge-base/DocumentToggleEnabledDialog.vue'
+export { default as DocumentDetailDrawer } from '@/components/knowledge-base/DocumentDetailDrawer.vue'

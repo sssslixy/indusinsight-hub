@@ -1,0 +1,6 @@
+export { default as AgentHistorySidebar } from '@/components/agents/workbench/AgentHistorySidebar.vue'
+export { default as AgentConversationPanel } from '@/components/agents/workbench/AgentConversationPanel.vue'
+export { default as AgentInputBar } from '@/components/agents/workbench/AgentInputBar.vue'
+export { default as InterruptConfirmDialog } from '@/components/agents/workbench/InterruptConfirmDialog.vue'
+export { default as DeleteSessionDialog } from '@/components/agents/workbench/DeleteSessionDialog.vue'
+export { default as RenameSessionDialog } from '@/components/agents/workbench/RenameSessionDialog.vue'

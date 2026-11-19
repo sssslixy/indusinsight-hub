@@ -1,0 +1,83 @@
+# --- 依赖与构建产物 ---
+# node_modules：第三方包体积大且可由 lockfile + package.json 还原，不应提交
+node_modules/
+
+# dist / dist-ssr：Vite 构建输出，应通过 CI 或本地 build 生成
+dist
+dist-ssr
+
+# *.tsbuildinfo：TypeScript 增量编译缓存，机器相关
+*.tsbuildinfo
+
+# --- 环境变量（含密钥）---
+# .env*：本地 API 地址、密钥等；!.env.example 保留无敏感内容的模板供协作者复制
+.env
+.env.*
+!.env.example
+
+# --- 日志与诊断 ---
+# logs / *.log / npm 等：运行与包管理器日志，无版本价值且可能含路径信息
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- 编辑器与操作系统 ---
+# .DS_Store：macOS 文件夹元数据，每人本机不同
+.DS_Store
+# .vscode/*：个人调试配置；保留 extensions.json 便于团队推荐扩展
+.vscode/*
+!.vscode/extensions.json
+# .idea 等：JetBrains / VS 系列本地工程文件
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- 本地覆盖配置 ---
+# *.local：常见为 .env.local、*.config.local 等，仅本机有效
+*.local
+
+# --- 工具缓存 ---
+# .eslintcache：ESLint 缓存，加速本地 lint，不应提交
+.eslintcache
+
+# --- 测试与 E2E 产生的产物（不提交报告与缓存）---
+# coverage：单测覆盖率 HTML/lcov，体积大且可重现
+coverage
+# __screenshots__：Vitest 等截图对比失败时的输出
+__screenshots__/
+# test-results、playwright-report：Playwright 测试结果与 HTML 报告
+test-results/
+playwright-report/
+# blob-report：Playwright blob 上报目录
+blob-report/
+# playwright/.cache：Playwright 浏览器/安装缓存
+playwright/.cache/
+
+# Cypress（若日后启用）：录制视频与截图体积大
+/cypress/videos/
+/cypress/screenshots/
+
+# --- Vite ---
+# *.timestamp-*：Vite 7+ 等生成的临时配置文件名片段
+*.timestamp-*-*.mjs
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# --- 以下不纳入版本库：测试源码与专用配置（远程仓库仅保留可直接 dev/build 的应用代码）---
+# /e2e/：Playwright 端到端测试，非运行应用所必需
+/e2e/
+# /src/__tests__/：单元测试，非运行应用所必需
+/src/__tests__/
+# vitest.config.ts：Vitest 入口，仅测试用
+/vitest.config.ts
+# playwright.config.ts：Playwright 入口，仅 E2E 用
+/playwright.config.ts
+# tsconfig.vitest.json：仅 Vitest/ts 检查测试代码的工程引用
+/tsconfig.vitest.json
